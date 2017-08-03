@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>RheinNodeApp</Name>
+    <RootNamespace>RheinNodeApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7431b348-7b22-42cc-92e7-e973cdf7a644</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\Scripts\bootstrap.js" />
+    <Compile Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\Scripts\bootstrap.min.js" />
+    <Compile Include="public\Assets\js\--15rheincs.min.js" />
+    <Compile Include="public\Assets\js\1rheincsold.js" />
+    <Compile Include="public\Assets\js\bootstrap.min.js" />
+    <Compile Include="public\Assets\js\bxSlider.js" />
+    <Compile Include="public\Assets\js\classie.js" />
+    <Compile Include="public\Assets\js\Custom.js" />
+    <Compile Include="public\Assets\js\ga-tracking.js" />
+    <Compile Include="public\Assets\js\JavaScript.js" />
+    <Compile Include="public\Assets\js\JavaScript1.js" />
+    <Compile Include="public\Assets\js\jquery-1.8.2.min.js" />
+    <Compile Include="public\javascripts\jquery-2.1.1.min.js" />
+    <Compile Include="public\Assets\js\jquery-ui.js" />
+    <Compile Include="public\Assets\js\jquery-ui.min.js" />
+    <Compile Include="public\Assets\js\jquery.datatables.min.js" />
+    <Compile Include="public\Assets\js\jquery.table2excel.js" />
+    <Compile Include="public\Assets\js\jquery.tiny-Carusal.js" />
+    <Compile Include="public\Assets\js\megamenu.js" />
+    <Compile Include="public\Assets\js\modernizr.custom.js" />
+    <Compile Include="public\Assets\js\rheincs.min.js" />
+    <Compile Include="public\Assets\js\rheincs.min_back.js" />
+    <Compile Include="public\Assets\location-map\js\jquery.atooltip.js" />
+    <Compile Include="public\Assets\location-map\js\jquery.atooltip.min.js" />
+    <Compile Include="public\Assets\location-map\js\jquery.atooltip.pack.js" />
+    <Compile Include="public\Assets\location-map\js\jquery.min.js" />
+    <Compile Include="public\javascripts\bxSlider.js" />
+    <Compile Include="public\javascripts\rheincs.min.js" />
+    <Compile Include="routes\adms.js" />
+    <Compile Include="routes\cloudandazure.js" />
+    <Compile Include="routes\microsoftbi.js" />
+    <Compile Include="routes\sharepoint.js" />
+    <Compile Include="routes\consulting.js" />
+    <Compile Include="routes\epicorservices.js" />
+    <Compile Include="routes\implementationss.js" />
+    <Compile Include="routes\partnerep.js" />
+    <Compile Include="routes\preconfiguredepicor.js" />
+    <Compile Include="routes\opensource.js" />
+    <Compile Include="routes\tsps.js" />
+    <Compile Include="routes\peds.js" />
+    <Compile Include="routes\testing.js" />
+    <Compile Include="routes\ams.js" />
+    <Compile Include="routes\ms_tech.js" />
+    <Compile Include="routes\epicor.js" />
+    <Compile Include="routes\sap.js" />
+    <Compile Include="routes\ibe.js" />
+    <Compile Include="routes\ppms.js" />
+    <Compile Include="routes\enterprise.js" />
+    <Compile Include="routes\erp_selection.js" />
+    <Compile Include="routes\current_openings.js" />
+    <Compile Include="routes\mentoring_approach.js" />
+    <Compile Include="routes\contactus.js" />
+    <Compile Include="routes\careermodel.js" />
+    <Compile Include="routes\mmc.js" />
+    <Compile Include="routes\sb.js" />
+    <Compile Include="routes\corpvideos.js" />
+    <Compile Include="routes\successstories.js" />
+    <Compile Include="routes\customerspeak.js" />
+    <Compile Include="routes\leadership.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\overview.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Content Include="public\Assets\alcon.jpg" />
+    <Content Include="public\Assets\amazon.jpg" />
+    <Content Include="public\Assets\arabi-enertech.jpg" />
+    <Content Include="public\Assets\arabian-industries.jpg" />
+    <Content Include="public\Assets\belcan.jpg" />
+    <Content Include="public\Assets\cash-fire.jpg" />
+    <Content Include="public\Assets\css\bootstrap-min.css" />
+    <Content Include="public\Assets\css\bootstrap.css" />
+    <Content Include="public\Assets\css\bootstrap.min.css" />
+    <Content Include="public\Assets\css\bxSlider.css" />
+    <Content Include="public\Assets\css\component.css" />
+    <Content Include="public\Assets\css\Custom.css" />
+    <Content Include="public\Assets\css\default.css" />
+    <Content Include="public\Assets\css\font-awesome.css" />
+    <Content Include="public\Assets\css\font-awesome.min.css" />
+    <Content Include="public\Assets\css\hover.css" />
+    <Content Include="public\Assets\css\jquery.datatables.css" />
+    <Content Include="public\Assets\css\LandingStyleSheet.css" />
+    <Content Include="public\Assets\css\media-q.css" />
+    <Content Include="public\Assets\css\megamenu.css" />
+    <Content Include="public\Assets\css\OverSheet.css" />
+    <Content Include="public\Assets\css\Responsive.css" />
+    <Content Include="public\Assets\css\rheincs-20.min.css" />
+    <Content Include="public\Assets\css\rheincs-old.min.css" />
+    <Content Include="public\Assets\css\rheincs-optimize.min.css" />
+    <Content Include="public\Assets\css\rheincs.min.css" />
+    <Content Include="public\Assets\css\StyleSheet.css" />
+    <Content Include="public\Assets\css\tinycarousel.css" />
+    <Content Include="public\Assets\euronics.jpg" />
+    <Content Include="public\Assets\flsmidh.jpg" />
+    <Content Include="public\Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\Assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\Assets\fonts\FontAwesome.otf" />
+    <Content Include="public\Assets\images\abap-dvelopment.jpg" />
+    <Content Include="public\Assets\images\Acunetix.jpg" />
+    <Content Include="public\Assets\images\admin.png" />
+    <Content Include="public\Assets\images\Adms-active.jpg" />
+    <Content Include="public\Assets\images\Adms.jpg" />
+    <Content Include="public\Assets\images\alcon.jpg" />
+    <Content Include="public\Assets\images\amazon.jpg" />
+    <Content Include="public\Assets\images\analysis.jpg" />
+    <Content Include="public\Assets\images\arabi-enertech.jpg" />
+    <Content Include="public\Assets\images\arabian-industries.jpg" />
+    <Content Include="public\Assets\images\arrow.png" />
+    <Content Include="public\Assets\images\arrow1.png" />
+    <Content Include="public\Assets\images\assessment-report.jpg" />
+    <Content Include="public\Assets\images\Automotive-parts.jpg" />
+    <Content Include="public\Assets\images\automotive-supplier.jpg" />
+    <Content Include="public\Assets\images\b-1.png" />
+    <Content Include="public\Assets\images\b.png" />
+    <Content Include="public\Assets\images\background.jpg" />
+    <Content Include="public\Assets\images\banner-1.jpg" />
+    <Content Include="public\Assets\images\banner-2.jpg" />
+    <Content Include="public\Assets\images\banner-3.jpg" />
+    <Content Include="public\Assets\images\banner-4.jpg" />
+    <Content Include="public\Assets\images\banner-5.jpg" />
+    <Content Include="public\Assets\images\bannerimg.jpg" />
+    <Content Include="public\Assets\images\belcan.jpg" />
+    <Content Include="public\Assets\images\blog-icon.png" />
+    <Content Include="public\Assets\images\bronze-stevieaward.jpg" />
+    <Content Include="public\Assets\images\Bug-Tracker.jpg" />
+    <Content Include="public\Assets\images\Bugzilla.jpg" />
+    <Content Include="public\Assets\images\Business-process-integrity.jpg" />
+    <Content Include="public\Assets\images\business-strategies.jpg" />
+    <Content Include="public\Assets\images\bxpreviousarrow.png" />
+    <Content Include="public\Assets\images\bxrightarrow.png" />
+    <Content Include="public\Assets\images\CAREERS-CAREER-MODEL.jpg" />
+    <Content Include="public\Assets\images\CAREERS-COUNSELING-APPROACH.jpg" />
+    <Content Include="public\Assets\images\CAREERS-CURRENT-OPENINGS.jpg" />
+    <Content Include="public\Assets\images\careers-model-culture.jpg" />
+    <Content Include="public\Assets\images\cash-fire.jpg" />
+    <Content Include="public\Assets\images\certified-consultants.png" />
+    <Content Include="public\Assets\images\certified-partner.png" />
+    <Content Include="public\Assets\images\close-icon.png" />
+    <Content Include="public\Assets\images\close.png" />
+    <Content Include="public\Assets\images\cloud-active.jpg" />
+    <Content Include="public\Assets\images\cloud-and-azure.jpg" />
+    <Content Include="public\Assets\images\cloud-application-services-infography.png" />
+    <Content Include="public\Assets\images\cloud-link1.jpg" />
+    <Content Include="public\Assets\images\cloud-service-strategy.jpg" />
+    <Content Include="public\Assets\images\color.jpg" />
+    <Content Include="public\Assets\images\Company-of-the-year.jpg" />
+    <Content Include="public\Assets\images\company.png" />
+    <Content Include="public\Assets\images\companyoftheyear.jpg" />
+    <Content Include="public\Assets\images\CONSULTANCY-ADVISORY-SERVICES-ERP-SELECTION.jpg" />
+    <Content Include="public\Assets\images\CONSULTANCY-ADVISORY-SERVICES-IT-BUSINESS-EXCELLENCE-SERVICE.jpg" />
+    <Content Include="public\Assets\images\CONSULTANCY-ADVISORY-SERVICES-PROGRAM-PROJECT-MANAGEMENT.jpg" />
+    <Content Include="public\Assets\images\Consulting-active.jpg" />
+    <Content Include="public\Assets\images\consulting-advisory-services.png" />
+    <Content Include="public\Assets\images\consulting-link.jpg" />
+    <Content Include="public\Assets\images\consulting-support.png" />
+    <Content Include="public\Assets\images\consultingActive.jpg" />
+    <Content Include="public\Assets\images\contactus.jpg" />
+    <Content Include="public\Assets\images\CRAIG-STEPHENS.png" />
+    <Content Include="public\Assets\images\craig.png" />
+    <Content Include="public\Assets\images\creatives.png" />
+    <Content Include="public\Assets\images\csr-banner1.jpg" />
+    <Content Include="public\Assets\images\current-openings-description.jpg" />
+    <Content Include="public\Assets\images\customer-connect-portal.jpg" />
+    <Content Include="public\Assets\images\digital-marketing.png" />
+    <Content Include="public\Assets\images\documents.jpg" />
+    <Content Include="public\Assets\images\domain-experts.png" />
+    <Content Include="public\Assets\images\dotNet-competency-center.png" />
+    <Content Include="public\Assets\images\Download-Pep.jpg" />
+    <Content Include="public\Assets\images\e-11.jpg" />
+    <Content Include="public\Assets\images\e22.jpg" />
+    <Content Include="public\Assets\images\e33.jpg" />
+    <Content Include="public\Assets\images\e44.jpg" />
+    <Content Include="public\Assets\images\engineers.png" />
+    <Content Include="public\Assets\images\enterprise-portal.jpg" />
+    <Content Include="public\Assets\images\enterprise-search.png" />
+    <Content Include="public\Assets\images\ENTERPRISE-SOUTIONSERP-SERVICES-EPICOR.jpg" />
+    <Content Include="public\Assets\images\ENTERPRISE-SOUTIONSERP-SERVICES-SAP.jpg" />
+    <Content Include="public\Assets\images\epic-inner-banner.jpg" />
+    <Content Include="public\Assets\images\epicor 1.jpg" />
+    <Content Include="public\Assets\images\epicor-2.jpg" />
+    <Content Include="public\Assets\images\epicor-3.jpg" />
+    <Content Include="public\Assets\images\epicor-4.jpg" />
+    <Content Include="public\Assets\images\epicor-5.jpg" />
+    <Content Include="public\Assets\images\epicor-competency.png" />
+    <Content Include="public\Assets\images\epicor-for-automative.jpg" />
+    <Content Include="public\Assets\images\epicor-for-medical-devices.jpg" />
+    <Content Include="public\Assets\images\epicor-for-metal-fabricator.jpg" />
+    <Content Include="public\Assets\images\epicor-for-oil-and-gas.jpg" />
+    <Content Include="public\Assets\images\epicor-for-professional-services.jpg" />
+    <Content Include="public\Assets\images\epicor-home1.jpg" />
+    <Content Include="public\Assets\images\epicor-implementation-services-bg.jpg" />
+    <Content Include="public\Assets\images\epicor-logo1.png" />
+    <Content Include="public\Assets\images\epicor-mngmt-bg.jpg" />
+    <Content Include="public\Assets\images\epicor-pep.jpg" />
+    <Content Include="public\Assets\images\epicor-preconfig-solutions.jpg" />
+    <Content Include="public\Assets\images\epicor-preconfigured-active.jpg" />
+    <Content Include="public\Assets\images\Epicor-Preconfigured-solutions.jpg" />
+    <Content Include="public\Assets\images\epicor-rendered-services.jpg" />
+    <Content Include="public\Assets\images\epicor-services.jpg" />
+    <Content Include="public\Assets\images\epicor-support-services.jpg" />
+    <Content Include="public\Assets\images\epicor-website-banner.jpg" />
+    <Content Include="public\Assets\images\Epicor.png" />
+    <Content Include="public\Assets\images\EpicPay-Features.jpg" />
+    <Content Include="public\Assets\images\epicpay-website-banner.jpg" />
+    <Content Include="public\Assets\images\ERP-1.jpg" />
+    <Content Include="public\Assets\images\ERP-2.jpg" />
+    <Content Include="public\Assets\images\erp-services.png" />
+    <Content Include="public\Assets\images\Euro-SAP.jpg" />
+    <Content Include="public\Assets\images\euronics.jpg" />
+    <Content Include="public\Assets\images\executiveoftheyear.jpg" />
+    <Content Include="public\Assets\images\extranet-portal.jpg" />
+    <Content Include="public\Assets\images\facebook.png" />
+    <Content Include="public\Assets\images\Fastest-growing-company-of-the-year.jpg" />
+    <Content Include="public\Assets\images\finance.png" />
+    <Content Include="public\Assets\images\flsmidh.jpg" />
+    <Content Include="public\Assets\images\google-plus.png" />
+    <Content Include="public\Assets\images\hand-hold-training.png" />
+    <Content Include="public\Assets\images\head_IBALogo.gif" />
+    <Content Include="public\Assets\images\home-banner-5.jpg" />
+    <Content Include="public\Assets\images\home1.jpg" />
+    <Content Include="public\Assets\images\hr.png" />
+    <Content Include="public\Assets\images\insight-active.jpg" />
+    <Content Include="public\Assets\images\insight-content-source.jpg" />
+    <Content Include="public\Assets\images\insight-link.jpg" />
+    <Content Include="public\Assets\images\InsightAndAnalysis.png" />
+    <Content Include="public\Assets\images\InsightAndAnalysisMouseHover.png" />
+    <Content Include="public\Assets\images\Insights-and-Analytics.jpg" />
+    <Content Include="public\Assets\images\IP-PRODUCT-DEVELOPMENT-SERVICES-OPEN-SOURCE-TECHNOLOGIES.jpg" />
+    <Content Include="public\Assets\images\IP-PRODUCT-DEVELOPMENT-SERVICES-TECHNOLOGY-SUPPORT-FOR-PRODUCT-STARTUPS.jpg" />
+    <Content Include="public\Assets\images\IP-PRODUCT-DEVELOPMENT-SERVICES.jpg" />
+    <Content Include="public\Assets\images\ip-product.png" />
+    <Content Include="public\Assets\images\it-1.jpg" />
+    <Content Include="public\Assets\images\it-2.jpg" />
+    <Content Include="public\Assets\images\IT-SERVICES-SOLUTIONS-APPLICATION-MAINTENANCE-SUPPORT1.jpg" />
+    <Content Include="public\Assets\images\IT-SERVICES-SOLUTIONS-TESTING-SERVICES1.jpg" />
+    <Content Include="public\Assets\images\it-services.png" />
+    <Content Include="public\Assets\images\JMeter.jpg" />
+    <Content Include="public\Assets\images\Joerg-Pirron.jpg" />
+    <Content Include="public\Assets\images\JoergPirron.jpg" />
+    <Content Include="public\Assets\images\kemppi.jpg" />
+    <Content Include="public\Assets\images\kern.jpg" />
+    <Content Include="public\Assets\images\kone.jpg" />
+    <Content Include="public\Assets\images\kraft-heinz.jpg" />
+    <Content Include="public\Assets\images\Kumar-Mallampalli.jpg" />
+    <Content Include="public\Assets\images\kumar.jpg" />
+    <Content Include="public\Assets\images\Leadership1.jpg" />
+    <Content Include="public\Assets\images\left-arrow.png" />
+    <Content Include="public\Assets\images\LeftArw.png" />
+    <Content Include="public\Assets\images\linkedin.png" />
+    <Content Include="public\Assets\images\loading.gif" />
+    <Content Include="public\Assets\images\location-icon.png" />
+    <Content Include="public\Assets\images\Management-team-of-the-year.jpg" />
+    <Content Include="public\Assets\images\management.png" />
+    <Content Include="public\Assets\images\metal-manufacturer.jpg" />
+    <Content Include="public\Assets\images\micro.png" />
+    <Content Include="public\Assets\images\microsoft-technologies-banner %281%29.jpg" />
+    <Content Include="public\Assets\images\microsoft-technologies-banner.jpg" />
+    <Content Include="public\Assets\images\MicrosoftTechnologiesOverview-1.jpg" />
+    <Content Include="public\Assets\images\MIcrosoftTechnologiesOverview.png" />
+    <Content Include="public\Assets\images\Milani.png" />
+    <Content Include="public\Assets\images\ms-ApplnDevelopment.png" />
+    <Content Include="public\Assets\images\ms-ApplnDevelopMouseHover.png" />
+    <Content Include="public\Assets\images\ms-CloudAndAzure.png" />
+    <Content Include="public\Assets\images\ms-CloudAndAzureMouseHover.png" />
+    <Content Include="public\Assets\images\ms-Consulting.png" />
+    <Content Include="public\Assets\images\ms-ConsultingMouseHover.png" />
+    <Content Include="public\Assets\images\ms-gold-silver-logo Old.jpg" />
+    <Content Include="public\Assets\images\ms-gold-silver-logo.jpg" />
+    <Content Include="public\Assets\images\ms-InsightAndAnalysis.png" />
+    <Content Include="public\Assets\images\ms-InsightAndAnalysisMouseHover.png" />
+    <Content Include="public\Assets\images\ms-SharePoint.png" />
+    <Content Include="public\Assets\images\ms-SharePointMouseHover.png" />
+    <Content Include="public\Assets\images\msd.jpg" />
+    <Content Include="public\Assets\images\MSpartner-logo.png" />
+    <Content Include="public\Assets\images\national-gas.jpg" />
+    <Content Include="public\Assets\images\news-events-bg.jpg" />
+    <Content Include="public\Assets\images\NewsandEvents.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\1-Rain.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\2-Pinnacle Awards.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\3-RIC awards.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\businesswireindia.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\chennaitimeslogo.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\efylogo.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\eqity_bulls.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\federal_mogul.png" />
+    <Content Include="public\Assets\images\NewsEvents\Image\flsmithfinal.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\fnlogo.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\German Stevies.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\Ians.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\Microsoft logo.png" />
+    <Content Include="public\Assets\images\NewsEvents\Image\Microsoft logo1.png" />
+    <Content Include="public\Assets\images\NewsEvents\Image\platinum-partner.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Microsoft-Partner-Oct-2014 Blur.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Microsoft-Partner-Oct-2014 not Clarity.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Microsoft-Partner-Oct-2014 OLD1.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Microsoft-Partner-Oct-2014.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Microsoft-Partner-Oct-2014.png" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Offices-Feb-2014.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-Stevie-Awards-GmbH-March-2015.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\RheinBrücke-TopConsultant-Oct-2014.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\Sandoz1.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\The_Telegraph.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\TRW-Automotive.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Image\Vetri-IBA.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Thumbnail\RheinBrücke-Microsoft-Partner-Oct-2014 Not Clarity.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Thumbnail\RheinBrücke-Microsoft-Partner-Oct-2014 Old.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Thumbnail\RheinBrücke-Microsoft-Partner-Oct-2014.jpg" />
+    <Content Include="public\Assets\images\NewsEvents\Thumbnail\RheinBrücke-TopConsultant-Award.jpg" />
+    <Content Include="public\Assets\images\novartis.jpg" />
+    <Content Include="public\Assets\images\open-source.jpg" />
+    <Content Include="public\Assets\images\Open-STA.jpg" />
+    <Content Include="public\Assets\images\operations1.png" />
+    <Content Include="public\Assets\images\overview 1.jpg" />
+    <Content Include="public\Assets\images\overview 2.jpg" />
+    <Content Include="public\Assets\images\overview 3.jpg" />
+    <Content Include="public\Assets\images\Overview.jpg" />
+    <Content Include="public\Assets\images\partners-portal.jpg" />
+    <Content Include="public\Assets\images\People%27s-choice.jpg" />
+    <Content Include="public\Assets\images\pep-active.jpg" />
+    <Content Include="public\Assets\images\pertro-masilla.jpg" />
+    <Content Include="public\Assets\images\pirron.jpg" />
+    <Content Include="public\Assets\images\play.png" />
+    <Content Include="public\Assets\images\pm-2.jpg" />
+    <Content Include="public\Assets\images\pm-3.jpg" />
+    <Content Include="public\Assets\images\pm-4.jpg" />
+    <Content Include="public\Assets\images\pm-methodology-1.jpg" />
+    <Content Include="public\Assets\images\popup-bg.jpg" />
+    <Content Include="public\Assets\images\pradeep-metals.jpg" />
+    <Content Include="public\Assets\images\preconfigured-industry-solutions.jpg" />
+    <Content Include="public\Assets\images\presales-support.png" />
+    <Content Include="public\Assets\images\privacy.jpg" />
+    <Content Include="public\Assets\images\product-positioning-support.png" />
+    <Content Include="public\Assets\images\productEngineering.jpg" />
+    <Content Include="public\Assets\images\projectmethodology.jpg" />
+    <Content Include="public\Assets\images\QTP.jpg" />
+    <Content Include="public\Assets\images\r-and-d.png" />
+    <Content Include="public\Assets\images\ray.jpg" />
+    <Content Include="public\Assets\images\rb-services-portfolio.jpg" />
+    <Content Include="public\Assets\images\RB_Logo_rgb.png" />
+    <Content Include="public\Assets\images\readmore.png" />
+    <Content Include="public\Assets\images\rederal.jpg" />
+    <Content Include="public\Assets\images\RheinBrücke-logo.jpg" />
+    <Content Include="public\Assets\images\RheinBrücke-Offices-Feb-2014.jpg" />
+    <Content Include="public\Assets\images\RheinBrücke-TopConsultant-Award.jpg" />
+    <Content Include="public\Assets\images\RheinBrücke.jpg" />
+    <Content Include="public\Assets\images\ribbon.png" />
+    <Content Include="public\Assets\images\right-arrow.png" />
+    <Content Include="public\Assets\images\right-shoring-approach.png" />
+    <Content Include="public\Assets\images\RightArw.png" />
+    <Content Include="public\Assets\images\rsp-consultojg.jpg" />
+    <Content Include="public\Assets\images\sales.png" />
+    <Content Include="public\Assets\images\sandoz.jpg" />
+    <Content Include="public\Assets\images\sap-experts-banner1.jpg" />
+    <Content Include="public\Assets\images\sap-services.jpg" />
+    <Content Include="public\Assets\images\sap-system-banner1.jpg" />
+    <Content Include="public\Assets\images\sap.jpg" />
+    <Content Include="public\Assets\images\saudi-american-glass.jpg" />
+    <Content Include="public\Assets\images\ScopeAdmin\.vs\config\applicationhost.config" />
+    <Content Include="public\Assets\images\ScopeAdmin\.vs\ScopeAdmin\v14\.suo" />
+    <Content Include="public\Assets\images\ScopeAdmin\desktop.ini" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\Antlr.3.4.1.9004\Antlr.3.4.1.9004.nupkg" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.pdb" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\bootstrap.3.0.0.nupkg" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\Content\bootstrap.css" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\Content\bootstrap.min.css" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\EntityFramework.6.1.3\content\App.config.transform" />
+    <Content Include="public\Assets\images\ScopeAdmin\packages\EntityFramework.6.1.3\content\Web.config.transform" />
+    <Content Include="public\Assets\images\se.jpg" />
+    <Content Include="public\Assets\images\sembcorp.jpg" />
+    <Content Include="public\Assets\images\services-rendered-active.jpg" />
+    <Content Include="public\Assets\images\sharepint-competency-center.png" />
+    <Content Include="public\Assets\images\Sharepoint-Services-Active.jpg" />
+    <Content Include="public\Assets\images\sharepoint-services-link.jpg" />
+    <Content Include="public\Assets\images\sharepoint-services.jpg" />
+    <Content Include="public\Assets\images\sharepoint.png" />
+    <Content Include="public\Assets\images\Silver-Stevie-Award-footer.jpg" />
+    <Content Include="public\Assets\images\Silver-Stevie-Award.jpg" />
+    <Content Include="public\Assets\images\Silver-Stevie-Award1-200x260.jpg" />
+    <Content Include="public\Assets\images\Silver.jpg" />
+    <Content Include="public\Assets\images\sitemap.jpg" />
+    <Content Include="public\Assets\images\SOLUTIONS-ENTERPRISE.jpg" />
+    <Content Include="public\Assets\images\SOLUTIONS-MID-MARKET-COMPANIES.jpg" />
+    <Content Include="public\Assets\images\SOLUTIONS-SMALL-BUSINESS1.jpg" />
+    <Content Include="public\Assets\images\sort_asc.png" />
+    <Content Include="public\Assets\images\sort_both.png" />
+    <Content Include="public\Assets\images\sort_desc.png" />
+    <Content Include="public\Assets\images\stahl.jpg" />
+    <Content Include="public\Assets\images\stevies german awards logo.png" />
+    <Content Include="public\Assets\images\Stevies.jpg" />
+    <Content Include="public\Assets\images\success 1.jpg" />
+    <Content Include="public\Assets\images\success 2.jpg" />
+    <Content Include="public\Assets\images\success 3.jpg" />
+    <Content Include="public\Assets\images\success 4.jpg" />
+    <Content Include="public\Assets\images\success 5.jpg" />
+    <Content Include="public\Assets\images\SUCCESS-STORIES1.jpg" />
+    <Content Include="public\Assets\images\support-services-active.jpg" />
+    <Content Include="public\Assets\images\technology.png" />
+    <Content Include="public\Assets\images\Terms.jpg" />
+    <Content Include="public\Assets\images\Testimonial-Banner.jpg" />
+    <Content Include="public\Assets\images\Testimonial\craig.gif" />
+    <Content Include="public\Assets\images\Testimonial\craig1.gif" />
+    <Content Include="public\Assets\images\Testimonial\kiran.gif" />
+    <Content Include="public\Assets\images\Testimonial\kiran.png" />
+    <Content Include="public\Assets\images\Testimonial\Milani.png" />
+    <Content Include="public\Assets\images\Testimonial\Rizwanulla-Khan.png" />
+    <Content Include="public\Assets\images\Testimonial\vinit_agarwal.gif" />
+    <Content Include="public\Assets\images\Testimonial\vinit_agarwal.png" />
+    <Content Include="public\Assets\images\Testimonial\wajid.png" />
+    <Content Include="public\Assets\images\testing.jpg" />
+    <Content Include="public\Assets\images\training.png" />
+    <Content Include="public\Assets\images\trw.jpg" />
+    <Content Include="public\Assets\images\twitter.png" />
+    <Content Include="public\Assets\images\unified-communications.png" />
+    <Content Include="public\Assets\images\vetri-selvan.jpg" />
+    <Content Include="public\Assets\images\vetri.jpg" />
+    <Content Include="public\Assets\images\VetriSelvan.jpg" />
+    <Content Include="public\Assets\images\VetriSelvanIT-Manager-of-the-Year.jpg" />
+    <Content Include="public\Assets\images\VetriSelvanIT-Specialist-of-the-Year.jpg" />
+    <Content Include="public\Assets\images\visual-studio-team-member.jpg" />
+    <Content Include="public\Assets\images\voting.gif" />
+    <Content Include="public\Assets\images\voting.png" />
+    <Content Include="public\Assets\images\white.png" />
+    <Content Include="public\Assets\images\youtube\1.jpg" />
+    <Content Include="public\Assets\images\youtube\2.jpg" />
+    <Content Include="public\Assets\images\youtube\3.jpg" />
+    <Content Include="public\Assets\images\youtube\4.jpg" />
+    <Content Include="public\Assets\images\youtube\5.jpg" />
+    <Content Include="public\Assets\images\youtube\6.jpg" />
+    <Content Include="public\Assets\images\youtube\7.jpg" />
+    <Content Include="public\Assets\kemppi.jpg" />
+    <Content Include="public\Assets\kern.jpg" />
+    <Content Include="public\Assets\kone.jpg" />
+    <Content Include="public\Assets\kraft-heinz.jpg" />
+    <Content Include="public\Assets\Landingimage\banner.jpg" />
+    <Content Include="public\Assets\Landingimage\black-line-small.png" />
+    <Content Include="public\Assets\Landingimage\black-line.png" />
+    <Content Include="public\Assets\Landingimage\circle-strip.png" />
+    <Content Include="public\Assets\Landingimage\closerto-stakeholders.png" />
+    <Content Include="public\Assets\Landingimage\country.png" />
+    <Content Include="public\Assets\Landingimage\enhanced-tools.png" />
+    <Content Include="public\Assets\Landingimage\Epicor-2-inner.jpg" />
+    <Content Include="public\Assets\Landingimage\Epicor-2.jpg" />
+    <Content Include="public\Assets\Landingimage\epicpay-circle.png" />
+    <Content Include="public\Assets\Landingimage\Flexible-deployments.png" />
+    <Content Include="public\Assets\Landingimage\grow-biz-epicor.png" />
+    <Content Include="public\Assets\Landingimage\ic-1.png" />
+    <Content Include="public\Assets\Landingimage\ic-2.png" />
+    <Content Include="public\Assets\Landingimage\ic-3.png" />
+    <Content Include="public\Assets\Landingimage\ic-4.png" />
+    <Content Include="public\Assets\Landingimage\icon-1.png" />
+    <Content Include="public\Assets\Landingimage\icon-2.png" />
+    <Content Include="public\Assets\Landingimage\icon-3.png" />
+    <Content Include="public\Assets\Landingimage\icon-4.png" />
+    <Content Include="public\Assets\Landingimage\icon-5.png" />
+    <Content Include="public\Assets\Landingimage\icon-6.png" />
+    <Content Include="public\Assets\Landingimage\icon-7.png" />
+    <Content Include="public\Assets\Landingimage\icon-8.png" />
+    <Content Include="public\Assets\Landingimage\icons-bottom.png" />
+    <Content Include="public\Assets\Landingimage\icons-top.png" />
+    <Content Include="public\Assets\Landingimage\increased-mobility.png" />
+    <Content Include="public\Assets\Landingimage\info-bg-1 - Copy.png" />
+    <Content Include="public\Assets\Landingimage\info-bg-1.png" />
+    <Content Include="public\Assets\Landingimage\info-bg.png" />
+    <Content Include="public\Assets\Landingimage\logo.jpg" />
+    <Content Include="public\Assets\Landingimage\mail.png" />
+    <Content Include="public\Assets\Landingimage\name.png" />
+    <Content Include="public\Assets\Landingimage\office.png" />
+    <Content Include="public\Assets\Landingimage\payroll.png" />
+    <Content Include="public\Assets\Landingimage\pdf-circle.png" />
+    <Content Include="public\Assets\Landingimage\phone.png" />
+    <Content Include="public\Assets\Landingimage\potent-performance.png" />
+    <Content Include="public\Assets\Landingimage\quote-l.png" />
+    <Content Include="public\Assets\Landingimage\quote-r.png" />
+    <Content Include="public\Assets\Landingimage\title.png" />
+    <Content Include="public\Assets\Landingimage\unmatched-stability.png" />
+    <Content Include="public\Assets\Landingimage\upgrade.png" />
+    <Content Include="public\Assets\Landingimage\why-upgrade-circle.png" />
+    <Content Include="public\Assets\location-map\css\atooltip.css" />
+    <Content Include="public\Assets\location-map\images\closeBtn.png" />
+    <Content Include="public\Assets\location-map\images\location-marker.png" />
+    <Content Include="public\Assets\location-map\images\world-map-bg.jpg" />
+    <Content Include="public\Assets\location-map\index.html" />
+    <Content Include="public\Assets\msd.jpg" />
+    <Content Include="public\Assets\national-gas.jpg" />
+    <Content Include="public\Assets\novartis.jpg" />
+    <Content Include="public\Assets\pdf\application-maintenance-document.pdf" />
+    <Content Include="public\Assets\pdf\EpicPay.pdf" />
+    <Content Include="public\Assets\pdf\rb-media-coverage-july-30th.pdf" />
+    <Content Include="public\Assets\pdf\RheinBrucke_PEP2.pdf" />
+    <Content Include="public\Assets\pdf\TransformingHRMadeEasy-version3.pdf" />
+    <Content Include="public\Assets\pertro-masilla.jpg" />
+    <Content Include="public\Assets\pradeep-metals.jpg" />
+    <Content Include="public\Assets\ray.jpg" />
+    <Content Include="public\Assets\rederal.jpg" />
+    <Content Include="public\Assets\rsp-consultojg.jpg" />
+    <Content Include="public\Assets\sandoz.jpg" />
+    <Content Include="public\Assets\saudi-american-glass.jpg" />
+    <Content Include="public\Assets\sembcorp.jpg" />
+    <Content Include="public\Assets\stahl.jpg" />
+    <Content Include="public\Assets\trw.jpg" />
+    <Content Include="package.json" />
+    <Content Include="public\stylesheets\bootstrap.css" />
+    <Content Include="public\stylesheets\oversheet.css" />
+    <Content Include="public\stylesheets\rheincs.min.css" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <Content Include="typings.json" />
+    <Content Include="views\adms.ejs" />
+    <Content Include="views\cloudandazure.ejs" />
+    <Content Include="views\microsoftbi.ejs" />
+    <Content Include="views\sharepoint.ejs" />
+    <Content Include="views\consulting.ejs" />
+    <Content Include="views\epicorservices.ejs" />
+    <Content Include="views\implementationss.ejs" />
+    <Content Include="views\partnerep.ejs" />
+    <Content Include="views\preconfiguredepicor.ejs" />
+    <Content Include="views\opensource.ejs" />
+    <Content Include="views\tsps.ejs" />
+    <Content Include="views\peds.ejs" />
+    <Content Include="views\testing.ejs" />
+    <Content Include="views\ams.ejs" />
+    <Content Include="views\ms_tech.ejs" />
+    <Content Include="views\epicor.ejs" />
+    <Content Include="views\sap.ejs" />
+    <Content Include="views\ibe.ejs" />
+    <Content Include="views\ppms.ejs" />
+    <Content Include="views\enterprise.ejs" />
+    <Content Include="views\erp_selection.ejs" />
+    <Content Include="views\current_openings.ejs" />
+    <Content Include="views\mentoring_approach.ejs" />
+    <Content Include="views\contactus.ejs" />
+    <Content Include="views\layout_old.ejs" />
+    <Content Include="views\careermodel.ejs" />
+    <Content Include="views\mmc.ejs" />
+    <Content Include="views\partials\head.ejs" />
+    <Content Include="views\partials\footer.ejs" />
+    <Content Include="views\leadership.ejs" />
+    <Content Include="views\overview.ejs" />
+    <Content Include="views\customerspeak.ejs" />
+    <Content Include="views\corpvideos.ejs" />
+    <Content Include="views\layout.ejs" />
+    <Content Include="views\sb.ejs" />
+    <Content Include="views\successstories.ejs" />
+    <Content Include="views\partials\header.ejs" />
+    <Content Include="views\index.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\Assets\" />
+    <Folder Include="public\Assets\css\" />
+    <Folder Include="public\Assets\fonts\" />
+    <Folder Include="public\Assets\images\" />
+    <Folder Include="public\Assets\images\NewsEvents\" />
+    <Folder Include="public\Assets\images\NewsEvents\Image\" />
+    <Folder Include="public\Assets\images\NewsEvents\Thumbnail\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\.vs\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\.vs\config\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\.vs\ScopeAdmin\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\.vs\ScopeAdmin\v14\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\Antlr.3.4.1.9004\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\Antlr.3.4.1.9004\lib\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\Content\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\fonts\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\bootstrap.3.0.0\content\Scripts\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\EntityFramework.6.1.3\" />
+    <Folder Include="public\Assets\images\ScopeAdmin\packages\EntityFramework.6.1.3\content\" />
+    <Folder Include="public\Assets\images\Testimonial\" />
+    <Folder Include="public\Assets\images\youtube\" />
+    <Folder Include="public\Assets\image\" />
+    <Folder Include="public\Assets\js\" />
+    <Folder Include="public\Assets\Landingimage\" />
+    <Folder Include="public\Assets\location-map\" />
+    <Folder Include="public\Assets\location-map\css\" />
+    <Folder Include="public\Assets\location-map\images\" />
+    <Folder Include="public\Assets\location-map\js\" />
+    <Folder Include="public\Assets\pdf\" />
+    <Folder Include="bin\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="views\" />
+    <Folder Include="views\pages\" />
+    <Folder Include="views\partials\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
